@@ -18,7 +18,7 @@ body {
 
 /* Header */
 header {
-    background-color: hsla(228, 96%, 48%, 0.897);
+    background-color: #ffc300;
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -38,7 +38,7 @@ header p {
     position: sticky;
     top: 0;
     z-index: 1000; /* Damit sie immer oben bleibt */
-    background-color:hsla(228, 96%, 48%, 0.897) ; /* Hintergrundfarbe */
+    background-color: #211d1d ; /* Hintergrundfarbe */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Schatten für besseren Kontrast */
     padding: 10px 0; /* Optional: Abstand innen */
     border-bottom: 1px solid white; /* Optional: Untere Linie für visuelle Trennung */
@@ -101,7 +101,7 @@ ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: hsla(228, 96%, 48%, 0.897);
+    background-color:#ffc300;
     color: white;
     text-align: center;
     padding: 20px;
