@@ -18,7 +18,7 @@ body {
 
 /* Header */
 header {
-    background-color: #ffc300;
+    background-color: #ffc300 ;
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -101,7 +101,7 @@ ul li a:hover {
 
 /* Footer */
 footer {
-    background-color:#ffc300;
+    background-color: #ffc300 ;
     color: white;
     text-align: center;
     padding: 20px;
