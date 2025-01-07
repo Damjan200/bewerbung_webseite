@@ -1,0 +1,184 @@
+/* styles.css */
+
+
+/* Allgemeine Einstellungen */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container für zentrierte Layouts */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: hsla(228, 96%, 48%, 0.897);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation fixieren */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Damit sie immer oben bleibt */
+    background-color:hsla(228, 96%, 48%, 0.897) ; /* Hintergrundfarbe */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Schatten für besseren Kontrast */
+    padding: 10px 0; /* Optional: Abstand innen */
+    border-bottom: 1px solid white; /* Optional: Untere Linie für visuelle Trennung */
+}
+
+/* Stil für die Navigationselemente */
+.sticky-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Elemente gleichmäßig verteilen */
+}
+
+.sticky-nav ul li {
+    margin: 0;
+}
+
+.sticky-nav ul li a {
+    text-decoration: none;
+    color: white; /* Textfarbe */
+    font-weight: 500;
+}
+
+.sticky-nav ul li a:hover {
+    color: #007bff; /* Hover-Effekt */
+}
+
+
+/* Abschnitt Styling */
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #2c3e50;
+}
+
+/* Listen für Zeugnisse */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: hsla(228, 96%, 48%, 0.897);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+/* Dokumente - Bilder */
+.document-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.documents h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+/* Styling für Vorschau */
+.document-gallery img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.document-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox Styling */
+#lightbox {
+    display: none; /* Wird durch JS sichtbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+

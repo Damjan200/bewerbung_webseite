@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damjan Cvijic - Meine Projetwebseite</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font für eine moderne Schriftart -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+// Lightbox öffnen
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const lightboxClose = document.getElementById("lightbox-close");
+
+document.querySelectorAll(".lightbox").forEach(item => {
+    item.addEventListener("click", event => {
+        event.preventDefault();
+        const imgSrc = item.getAttribute("href");
+        lightboxImage.setAttribute("src", imgSrc);
+        lightbox.style.display = "flex";
+    });
+});
+
+// Lightbox schließen
+lightboxClose.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+</script>
+</body>
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header"> <!-- ID Hinzugefügt-->
+        <div class="container">
+            <h1>Damjan Cvijic</h1>
+            <p>Softwareentwickler | Fullstack-Webentwickler | IT-Consultant</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+        <div class="container">
+            <ul>
+                <li> <a href="#header">Startseite</a></li>
+                <li><a href="#anschreiben">Anschreiben</a></li>
+                <li><a href="#lebenslauf">Lebenslauf</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+   
+    
+
+    <!-- Anschreiben Abschnitt -->
+    <section id="anschreiben">
+        <div class="container">
+            <h2>Anschreiben</h2>
+            <p>Hier finden Sie das Anschreiben von Damjan Cvijic:</p>
+            <!-- Bild für Anschreiben -->
+           
+            <img src="C:\Users\drift\OneDrive\Desktop\Projects 2025\img\Anschreiben\Anschreiben.jpg" alt="Damjan Cvijic Anschreiben" class="document-image" style="max-width: 100%; height: auto;">
+        </div>
+    </section>
+    
+   
+     <!-- Lebenslauf Abschnitt -->
+     <section id="lebenslauf">
+        <div class="container">
+            <h2>Lebenslauf</h2>
+            <p><strong>Name:</strong> Damjan Cvijic</p>
+            <p><strong>Berufserfahrung:</strong> Fullstack-Developer bei NuuOne GmbH (01.08.2024-30.11.2024)</p>
+            <p><strong>Ausbildung:</strong> Aubsildung  NuuOne GmbH (01.08.2024-30.11.2024)</p>
+            <p><strong>Fähigkeiten:</strong> HTML, CSS, JavaScript, React, Node.js, Git</p>
+            <p><strong>Sprachkenntnisse:</strong> Deutsch (Muttersprache), Serbisch (Muttersprache), Englisch (fließend)</p>
+            <!-- Lebenslauf Bilder -->
+            <h3>Lebenslauf </h3>
+            <div class="document-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <img src="C:\Users\drift\OneDrive\Desktop\Projects 2025\img\Lebenslauf\2024_Bewerbungsmappe _Lebenslauf_ Damjan_Cvijic_(1)-1.jpg" alt="Lebenslauf Seite 1" style="max-width: 100%; height: auto;">
+                <img src="C:\Users\drift\OneDrive\Desktop\Projects 2025\img\Lebenslauf\2024_Bewerbungsmappe _Lebenslauf_ Damjan_Cvijic_(1)-2.jpg" alt="Lebenslauf Seite 2" style="max-width: 100%; height: auto;">
+                <img src="C:\Users\drift\OneDrive\Desktop\Projects 2025\img\Lebenslauf\2024_Bewerbungsmappe _Lebenslauf_ Damjan_Cvijic_(1)-3.jpg" alt="Lebenslauf Seite 3" style="max-width: 100%; height: auto;">
+                <img src="C:\Users\drift\OneDrive\Desktop\Projects 2025\img\Lebenslauf\2024_Bewerbungsmappe _Lebenslauf_ Damjan_Cvijic_(1)-4.jpg" alt="Lebenslauf Seite 4" style="max-width: 100%; height: auto;">
+                <img src="C:\Users\drift\OneDrive\Desktop\Projects 2025\img\Lebenslauf\2024_Bewerbungsmappe _Lebenslauf_ Damjan_Cvijic_(1)-5.jpg" alt="Lebenslauf Seite 5" style="max-width: 100%; height: auto;">
+                <img src="C:\Users\drift\OneDrive\Desktop\Projects 2025\img\Lebenslauf\2024_Bewerbungsmappe _Lebenslauf_ Damjan_Cvijic_(1)-6.jpg" alt="Lebenslauf Seite 6" style="max-width: 100%; height: auto;">
+                <img src="C:\Users\drift\OneDrive\Desktop\Projects 2025\img\Lebenslauf\2024_Bewerbungsmappe _Lebenslauf_ Damjan_Cvijic_(1)-7.jpg" alt="Lebenslauf Seite 7" style="max-width: 100%; height: auto;">
+                <img src="C:\Users\drift\OneDrive\Desktop\Projects 2025\img\Lebenslauf\2024_Bewerbungsmappe _Lebenslauf_ Damjan_Cvijic_(1)-8.jpg" alt="Lebenslauf Seite 8" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+     <!-- Kontakt Abschnitt -->
+     <section id="kontakt">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p> Telefonisch Erreichbar</p>
+            <p ><strong> Telefon:</strong> +4915735445298</p>
+            <p>Sie können mich per E-Mail erreichen:</p>
+            <p><strong>E-Mail:</strong> cvijicdamjan117@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Damjan Cvijic. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
